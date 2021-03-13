@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    display: grid;
+    grid-template-areas: 
+        "A B C"
+    ;
+}
+#title{}
+ul{
+    list-style-type: none;
+}
+#content{
+    grid-area: B;
+    display: grid;
+    grid-template-areas: 
+        "X"
+        "Y"
+    ;
+}
+.item-box{}
+.item-box>#api-list{
+    background-color: red;
+    grid-area: X;
+}
+.item-box>#entries{
+    background-color: yellow;
+    grid-area: X;
+}
+#api-list{}
+.entry{}
+.item-text{}
+#weather-today{}
+#temperature-today{}
+#weather-tomorrow{}
+#temperature-tomorrow{}
+#humidity-air{}
+#entries{}
+.drop-down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+}
+.info{}
+#name{}
+#soil{}
+#info-text{}
+.btn{
+    background-color: blue;
+
+}
+#prev{
+    grid-area: A;
+}
+#next{
+    grid-area: C;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Garden WebServer</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title"></h1>
+        <div id="content">
+            <div class="item-box">
+                <ul id="api-list">
+                    <li class="entry">Meteo oggi: 
+                        <span class="item-text" id="weather-today">---</span>
+                        <span class="item-text" id="temperature-today">---</span>
+                    </li>
+                    <li class="entry">Meteo domani: 
+                        <span class="item-text" id="weather-tomorrow">---</span>
+                        <span class="item-text" id="temperature-tomorrow">---</span>
+                    </li>
+                    <li class="entry">Umidità aria<span class="item-text" id="humidity-air">---</span></li>
+                </ul>
+            </div>
+            <div class="item-box">
+                <ul id="entries">
+                    <li class="entry">Nome: <span class="item-text" id="name">---</span></li>
+                    <li class="entry">Terreno: <span class="item-text" id="soil">---</span></li>
+                    <li class="entry">Info<a href="#" class="drop-down"></a>
+                    <li class="entry info"><span id="info-text">---</span></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="btn" id="prev"></a>
+        <a href="#" class="btn" id="next"></a>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
