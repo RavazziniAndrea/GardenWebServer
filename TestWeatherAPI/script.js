@@ -1,4 +1,4 @@
-const url="http://api.openweathermap.org/data/2.5/forecast?id=3179649&appid=f0ec23d387cbbe76414091916e82868a";
+const url="http://api.openweathermap.org/data/2.5/forecast?id=3179649&appid={API_KEY}";
 
 async function fullCall(){ 
     let call= await fetch(url);
