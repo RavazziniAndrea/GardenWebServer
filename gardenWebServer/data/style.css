@@ -1,0 +1,116 @@
+:root{
+    --blue: #3d5a80ff;
+    --light-blue: rgb(207, 220, 228);
+    --light-cyan: rgb(224, 241, 252);
+    --red: #ee6c4dff;
+    --dark: #293241ff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: var(--dark);
+}
+#main{
+    background-color: var(--light-cyan);
+    display: grid;
+    grid-template-areas: 
+        "A B C"
+    ;
+     grid-template-columns: 0fr 3fr 0fr; /*don't show buttons */
+    /* width: 90%; */
+}
+#title{}
+ul{
+    list-style-type: none;
+}
+#content{
+    grid-area: B;
+    display: grid;
+    grid-template-areas: 
+        "X"
+        "Y"
+    ;
+}
+.item-box{
+    margin: 5px;
+}
+.item-box>#api-list{
+    background-color: var(--light-blue);
+    border-radius: 5px;
+    grid-area: X;
+}
+.item-box>#entries{
+    grid-area: X;
+}
+#api-list{}
+.entry{
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin: 2px;
+}
+.item-text{}
+#weather-today{}
+#temperature-today{}
+#weather-tomorrow{}
+#temperature-tomorrow{}
+#humidity-air{}
+#entries{}
+#first{}
+#second{}
+#third{}
+#entries:nth-child(1){
+    margin-top:15px;
+}
+#entries>li{
+    background-color: var(--light-blue);
+    border-radius: 5px ;
+    margin-bottom: 30px;
+}
+.entry-sublist>.btn-inside{
+    display: grid;
+    grid-template-areas: "T BTN";
+    grid-template-columns: 80% 20%;
+    align-items: center;
+
+}
+
+.btn-inside{
+    grid-area: T;
+}
+
+.drop-down{
+    grid-area: BTN;
+    justify-self: center;
+    display: inline-block; 
+    border-radius: 5px;
+}
+
+.drop-down-icon{
+    border: 1px red solid;
+    border-radius: 5px ;
+    padding: 1px;
+    width: 20px;
+    height: 15px;
+    scale: 1;
+}
+.info{
+    display: none;
+}
+#name{}
+#soil{}
+#info-text{}
+.btn{
+
+}
+#prev{
+    grid-area: A;
+}
+#next{
+    grid-area: C;
+}

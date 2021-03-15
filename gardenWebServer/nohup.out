@@ -1,0 +1,8 @@
+Nautilus-Share-Message: 22:42:05.625: Called "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)
+
+(org.gnome.Nautilus:22536): GLib-CRITICAL **: 22:42:51.527: Source ID 13232 was not found when attempting to remove it
+
+(org.gnome.Nautilus:22536): GLib-CRITICAL **: 22:43:42.532: Source ID 14542 was not found when attempting to remove it
+Gtk-Message: 22:46:19.896: Failed to load module "canberra-gtk-module"
+gimp_device_info_set_device: trying to set GdkDevice 'Razer Razer Mamba Tournament Edition' on GimpDeviceInfo which already has a device
+Gtk-Message: 22:46:22.861: Failed to load module "canberra-gtk-module"
