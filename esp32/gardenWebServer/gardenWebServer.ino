@@ -17,14 +17,14 @@ const char* password = "";
 String sensorRead(){
   //average of 100 samplings
   for (int i = 0; i <= 100; i++) { 
-    senso1 = sensor1 + analogRead(s1); 
-    senso2 = sensor2 + analogRead(s2); 
-    senso3 = sensor3 + analogRead(s3); 
+    sensor1 = sensor1 + analogRead(s1); 
+    sensor2 = sensor2 + analogRead(s2); 
+    sensor3 = sensor3 + analogRead(s3); 
     delay(1); 
   } 
-  senso1 = sensor1/100.0; 
-  senso2 = sensor2/100.0; 
-  senso3 = sensor3/100.0; 
+  sensor1 = sensor1/100.0; 
+  sensor2 = sensor2/100.0; 
+  sensor3 = sensor3/100.0; 
   delay(30);
 }
 
