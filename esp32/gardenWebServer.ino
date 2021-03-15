@@ -1,6 +1,7 @@
 //LIBRARIES------------
 #include "WiFi.h"
 #include "ESPAsyncWebServer.h"
+#include "SPIFFS.h"
 
 //DEFINITIONS
 #define s1 A0
