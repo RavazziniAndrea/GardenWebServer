@@ -1,2 +1,2 @@
-#define SSID "Urla e avrai il WiFi."
-#define PASSWORD "Biscotti"
+#define SSID "***"
+#define PASSWORD "***"
